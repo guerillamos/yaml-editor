@@ -3,15 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YAML Editor</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="/static/css/styles.css">
+    <title>YAML Editor</title>
 </head>
 <body>
-    <h1>YAML Editor</h1>
-    <textarea id="yamlEditor" rows="30" cols="100"></textarea>
-    <br>
-    <button id="saveButton">Save</button>
-    <div id="message"></div>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">YAML Editor</h1>
+        <div class="card">
+            <div class="card-body">
+                <textarea id="yamlEditor" class="form-control yaml-editor" rows="20"></textarea>
+            </div>
+        </div>
+        <button id="saveButton" class="btn btn-primary mt-3 mb-3">Save YAML</button>
+        <div id="message" class="message"></div>
+    </div>
     <script src="/static/js/script.js"></script>
 </body>
 </html>

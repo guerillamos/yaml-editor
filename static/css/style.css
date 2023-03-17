@@ -1,28 +1,16 @@
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-}
-
-h1 {
-    margin-bottom: 20px;
-}
-
-#editor {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-#yaml-editor {
+.yaml-editor {
     resize: none;
 }
 
-button {
-    margin-top: 20px;
+.message {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.success {
+    color: #4caf50;
+}
+
+.error {
+    color: #f44336;
 }
