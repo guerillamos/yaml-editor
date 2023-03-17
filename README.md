@@ -22,19 +22,3 @@ The backend API reads and writes the YAML data to a file (`data.yaml`) and valid
 2. Install the required Python packages by running `pip install -r requirements.txt`.
 3. Run the application using `python app.py`.
 4. Open your web browser and navigate to `http://127.0.0.1:5000/` to access the YAML Editor web application.
-
-your_project_directory
-├── app.py
-├── requirements.txt
-├── README.md
-├── data
-│   ├── data.yaml
-│   └── openapi.yaml
-├── static
-│   ├── css
-│   │   └── styles.css
-│   └── js
-│       └── script.js
-└── templates
-    └── index.html
-
