@@ -1,0 +1,25 @@
+teams:
+  - name: team-1
+    tags:
+      tag1: value1
+      tag2: value2
+    services:
+      - name: svc-1
+        app_service_plans: []
+        container_registries: []
+        cosmos_db_accounts: []
+        fabric_clusters: []
+        function_app_service_plans: []
+        function_storage_accounts: []
+        key_vaults: []
+        managed_grafana: []
+        postgresql_flexible_servers: []
+        postgresql_servers: []
+        redis_primary: []
+        service_bus_namespaces: []
+        static_sites:
+          - name: ss-1
+        storage_accounts: []
+  - name: team-2
+    tags: {}
+    services: []

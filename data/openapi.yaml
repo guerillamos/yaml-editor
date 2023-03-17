@@ -1,0 +1,75 @@
+openapi: 3.0.0
+info:
+  title: Minimal API
+  version: 1.0.0
+paths:
+  /teams:
+    get:
+      summary: Retrieve teams data
+      responses:
+        '200':
+          description: A JSON object with teams data
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TeamsData'
+components:
+  schemas:
+    TeamsData:
+      type: object
+      properties:
+        teams:
+          type: array
+          items:
+            $ref: '#/components/schemas/Team'
+    Team:
+      type: object
+      properties:
+        name:
+          type: string
+        tags:
+          type: object
+        services:
+          type: array
+          items:
+            $ref: '#/components/schemas/Service'
+    Service:
+      type: object
+      properties:
+        name:
+          type: string
+        app_service_plans:
+          type: array
+        container_registries:
+          type: array
+        cosmos_db_accounts:
+          type: array
+        fabric_clusters:
+          type: array
+        function_app_service_plans:
+          type: array
+        function_storage_accounts:
+          type: array
+        key_vaults:
+          type: array
+        managed_grafana:
+          type: array
+        postgresql_flexible_servers:
+          type: array
+        postgresql_servers:
+          type: array
+        redis_primary:
+          type: array
+        service_bus_namespaces:
+          type: array
+        static_sites:
+          type: array
+          items:
+            $ref: '#/components/schemas/StaticSite'
+        storage_accounts:
+          type: array
+    StaticSite:
+      type: object
+      properties:
+        name:
+          type: string
